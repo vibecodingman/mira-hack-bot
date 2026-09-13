@@ -61,7 +61,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
         elif message.photo:
             photo_file_id = message.photo[-1].file_id
             old_caption = message.caption or ""
-            new_caption = f"{old_caption} мира".strip()
+            new_caption = f"{old_caption} Мира".strip()
             await context.bot.send_photo(chat_id=TARGET_CHAT_ID, photo=photo_file_id, caption=new_caption)
 
     # 2. Из целевой группы -> вам в ЛС
